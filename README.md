@@ -8,7 +8,7 @@ Check out the theme in action [here](http://orville.thebennettproject.com).
 Install
 -------
     $ cd octopress
-    $ git clone git://github.com/illogic-al/cleanpress.git .themes/cleanpress
+    $ git clone https://github.com/illogic-al/cleanpress.git .themes/cleanpress
     $ rake install['cleanpress']
     $ rake generate
 
