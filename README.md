@@ -2,13 +2,13 @@ CleanPress
 ==========
 CleanPress is an elegant, clean & white minimal and responsive theme for [Octopress](http://octopress.org). It's a fork from the OctoPress Slash Theme with substantial changes with work still to do.
 
-Check out the theme in action [here](http://carmo.org.uk).
+Check out the theme in action [here](http://orville.thebennettproject.com).
 
 
 Install
 -------
     $ cd octopress
-    $ git clone git://github.com/macjasp/cleanpress.git .themes/cleanpress
+    $ git clone git://github.com/illogic-al/cleanpress.git .themes/cleanpress
     $ rake install['cleanpress']
     $ rake generate
 
