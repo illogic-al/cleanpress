@@ -10,3 +10,23 @@ All views expressed here are my own, not my clients', employer's or wife's.
 <br>
 Powered by <a href="http://octopress.org/">Octopress</a>, <a href="http://unicorn.bogomips.org">Unicorns</a>
 and <a href="http://www.linode.com/?r=63b4311120ddd88b8817c4d7e84eb164ee3afb60">Linode</a>
+
+{% if site.piwik_host_name and site.piwik_site_id %}
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(["trackPageView"]);
+    _paq.push(["enableLinkTracking"]);
+    (function() {
+      var u=(("https:" == document.location.protocol) ? "https" : "http") + "://{{ site.piwik_host_name }}/";
+      _paq.push(["setTrackerUrl", u+"piwik.php"]);
+      _paq.push(["setSiteId", "{{ site.piwik_site_id }}"]);
+      var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+      g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+<noscript>
+  <!-- Piwik Image Tracker-->
+  <img src="https://{{ site.piwik_host_name }}/piwik.php?idsite={{ site.piwik_site_id }}&rec=1" style="border:0" alt="" />
+  <!-- End Piwik -->
+</noscript>
+{% endif %}
